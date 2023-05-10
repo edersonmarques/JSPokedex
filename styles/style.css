@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+header {
+    background-color: yellowgreen;
+}
+
+.header-img {
+    width: 100px;
+    height: 100px;
+}
+
+.main {
+    background-color: blue;
+}
