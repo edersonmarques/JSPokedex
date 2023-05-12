@@ -3,4 +3,51 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     background-color: #5e5b5bad;
+    color: #333333;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .link-image, 
+header .button-image {
+    width: 30px;
+}
+
+header #theme-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .link-image:hover
+#theme-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    background-color: antiquewhite;
+    padding: 25px;
+}
+
+main #pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .pokemon-card {
+    background-color: #d8e3ec;
+    width: 200px;
 }
