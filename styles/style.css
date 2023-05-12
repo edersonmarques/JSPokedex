@@ -26,11 +26,10 @@ header .button-image {
 header #theme-button {
     background: none;
     border: none;
-    cursor: pointer;
 }
 
-header .link-image:hover
-header #theme-button:hover,
+header .link-image:hover,
+header .button-image:hover,
 main .pokemon-card:hover {
     transform: scale(1.05);
     cursor: pointer;
