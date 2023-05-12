@@ -12,7 +12,6 @@ body.modo-escuro {
 }
 
 header {
-    background-color: green;
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -21,6 +20,7 @@ header {
 header .link-image, 
 header .button-image {
     width: 30px;
+    transition: 0.2s ease-in-out;
 }
 
 header #theme-button {
@@ -30,13 +30,13 @@ header #theme-button {
 }
 
 header .link-image:hover
-#theme-button:hover {
+header #theme-button:hover,
+main .pokemon-card:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
 
 main {
-    background-color: antiquewhite;
     padding: 25px;
 }
 
@@ -50,4 +50,80 @@ main #pokemon-list {
 main .pokemon-card {
     background-color: #d8e3ec;
     width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .pokemon-card:hover {
+    background-color: #96d9d6;
+}
+
+.modo-escuro .pokemon-card {
+    background-color: #a8a8a8;
+}
+
+main .pokemon-card .informations {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 15px;
+}
+
+main .pokemon-card .informations span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+main .pokemon-card .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .pokemon-card .types {
+    background-color: white;
+    display: flex;
+    gap: 15px;
+}
+
+main .pokemon-card .types {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grass-type {
+    background-color: #7ac74c;
+
+}
+
+.poison-type {
+    background-color: #df67ddfb;
+}
+
+.water-type {
+    background-color: #6390f0;
+}
+
+.fire-type {
+    background-color: #ee8130;
+}
+
+.bug-type {
+    background-color: #a6b91a;
+}
+
+.iron-type {
+    background-color: rgb(116, 113, 113);
+}
+
+main .description {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 15px;
+    padding-right: 10px;
 }
