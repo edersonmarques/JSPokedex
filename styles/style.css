@@ -86,19 +86,17 @@ main .pokemon-card .gif {
 }
 
 main .pokemon-card .types {
-    background-color: white;
     display: flex;
     gap: 15px;
 }
 
-main .pokemon-card .types {
+main .pokemon-card .types .type {
     padding: 8px;
     border-radius: 10px;
 }
 
 .grass-type {
     background-color: #7ac74c;
-
 }
 
 .poison-type {
@@ -119,6 +117,10 @@ main .pokemon-card .types {
 
 .iron-type {
     background-color: rgb(116, 113, 113);
+}
+
+.flying-type {
+    background-color: #28cfca;
 }
 
 main .description {
