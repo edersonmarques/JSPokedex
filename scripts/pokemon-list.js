@@ -1,4 +1,4 @@
-{
+export const pokemons = {
     "count": 1281,
     "next": "https://pokeapi.co/api/v2/pokemon?offset=151&limit=151",
     "previous": null,
@@ -608,4 +608,6 @@
             "url": "https://pokeapi.co/api/v2/pokemon/151/"
         }
     ]
-}
+};
+
+

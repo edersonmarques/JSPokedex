@@ -1,9 +1,6 @@
-const pokemon_list = document.querySelector('#pokemon-list');
-let pokemon_number = 1;
-'https://pokeapi.co/api/v2/pokemon?limit=151'
+import { pokemons } from "./pokemon-list.js";
 
-
-function generatePokemonCard() {
+function generatePokemonCard(pokemon_name) {
     let new_poke_card = document.createElement('li');
     pokemon_list.appendChild(new_poke_card);
     pokemon_list.lastChild.classList.add("pokemon-card");
@@ -22,5 +19,18 @@ function generatePokemonCard() {
     
     <p class="description">lorem ipsum dlor it amet sarut jsnjfbdhfbjf jfkfjkg kdfbbghfg hebfb ghkb frfr grgbkgungj jrgkgjng jrgrng gnfgj g gjgngj gjgngng</p>`;
     pokemon_number++;
+}
+
+
+const pokemon_list = document.querySelector('#pokemon-list');
+let pokemon_number = 1;
+
+for (const n of pokemons.results) {
+    fetch(n.url).then(result => {
+        return result.json();
+    }).then(api_return => {
+        console.log(api_return);
+    });
+    generatePokemonCard(n.name);
 }
 
