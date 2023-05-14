@@ -9,7 +9,7 @@ function generatePokemonCard(pokemon_name) {
         <span class="pokemon-number">#${pokemon_number}</span>
     </div>
     
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon_number}.gif" alt="Pokemon Gif" class="gif">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon_number}.gif" class="gif">
     
     <ul class="types">
     </ul>

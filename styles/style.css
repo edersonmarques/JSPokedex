@@ -92,34 +92,79 @@ main .pokemon-card .types {
 main .pokemon-card .types .type {
     padding: 8px;
     border-radius: 10px;
+    text-transform: capitalize;
 }
 
 .grass {
-    background-color: #7ac74c;
+    background-color: #7AC74C;
 }
 
 .poison {
-    background-color: #df67ddfb;
+    background-color: #A33EA1;
 }
 
 .water {
-    background-color: #6390f0;
+    background-color: #6390F0;
 }
 
 .fire {
-    background-color: #ee8130;
+    background-color: #EE8130;
 }
 
-.bug {
-    background-color: #a6b91a;
-}
-
-.iron {
-    background-color: rgb(116, 113, 113);
+.steel {
+    background-color: #B7B7CE;
 }
 
 .flying {
-    background-color: #28cfca;
+    background-color: #A98FF3;
+}
+
+.normal {
+    background-color: #A8A77A;
+}
+
+.electric {
+    background-color: #F7D02C;
+}
+
+.ice {
+    background-color: #96D9D6;
+}
+
+.fighting {
+    background-color: #C22E28;
+}
+
+.ground {
+    background-color: #E2BF65;
+}
+
+.psychic {
+    background-color: #F95587;
+}
+
+.rock {
+    background-color: #B6A136;
+}
+
+.ghost {
+    background-color: #735797;
+}
+
+.dragon {
+    background-color: #6F35FC;
+}
+
+.dark {
+    background-color: #705746;
+}
+
+.fairy {
+    background-color: #D685AD;
+}
+
+.bug {
+    background-color: #A6B91A;
 }
 
 main .description {
