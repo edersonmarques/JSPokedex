@@ -14,7 +14,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=151').then(response => {
             pokemon_list.lastChild.classList.add("pokemon-card");
             pokemon_list.lastChild.innerHTML = `
             <div class="informations">
-                <span class="pokemon-name">${response_body.name}</span>
+                <span class="pokemon-name">lorem</span>
                 <span class="pokemon-number">#${pokemon_number}</span>
             </div>
             
