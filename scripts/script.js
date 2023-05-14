@@ -15,4 +15,3 @@ theme_button.addEventListener('click', () => {
     }
     body.className = theme;
 });
-
