@@ -14,7 +14,7 @@ function generatePokemonCard(pokemon_name) {
     <ul class="types">
     </ul>
     
-    <p class="description">lorem ipsum dlor it amet sarut jsnjfbdhfbjf jfkfjkg kdfbbghfg hebfb ghkb frfr grgbkgungj jrgkgjng jrgrng gnfgj g gjgngj gjgngng</p>`;
+    <p class="description">Loading...`;
   pokemon_number++;
 }
 
