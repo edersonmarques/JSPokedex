@@ -94,31 +94,31 @@ main .pokemon-card .types .type {
     border-radius: 10px;
 }
 
-.grass-type {
+.grass {
     background-color: #7ac74c;
 }
 
-.poison-type {
+.poison {
     background-color: #df67ddfb;
 }
 
-.water-type {
+.water {
     background-color: #6390f0;
 }
 
-.fire-type {
+.fire {
     background-color: #ee8130;
 }
 
-.bug-type {
+.bug {
     background-color: #a6b91a;
 }
 
-.iron-type {
+.iron {
     background-color: rgb(116, 113, 113);
 }
 
-.flying-type {
+.flying {
     background-color: #28cfca;
 }
 
