@@ -39,6 +39,15 @@ fetch(`https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=151`
           return result.json();
         })
         .then((pokemon_data) => {
+          fetch(`${pokemon_data.species.url}`)
+          .then(result => {
+            return result.json();
+          })
+          .then(pokemon_data_specie => {
+            let poke_description = n.getElementsByClassName("description")[0];
+          poke_description.innerHTML =
+            pokemon_data_specie.flavor_text_entries[9].flavor_text;
+          });
           for (const pokemon_type of pokemon_data.types) {
             let new_poke_type = document.createElement("li");
             const pokemon_types_list = n.getElementsByClassName("types");
@@ -49,22 +58,6 @@ fetch(`https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=151`
             pokemon_types_list[0].lastChild.classList.add("type");
             pokemon_types_list[0].lastChild.innerHTML = pokemon_type.type.name;
           }
-        });
-      fetch(`https://pokeapi.co/api/v2/pokemon/${n.id}`)
-        .then((result) => {
-          return result.json();
-        })
-        .then((pokemon_data) => {
-          fetch(`${pokemon_data.species.url}`)
-          .then(result => {
-            return result.json();
-          })
-          .then(pokemon_data_specie => {
-            let poke_description = n.getElementsByClassName("description")[0];
-          poke_description.innerHTML =
-            pokemon_data_specie.flavor_text_entries[9].flavor_text;
-          });
-          
         });
     }
   });
