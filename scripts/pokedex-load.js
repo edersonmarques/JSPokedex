@@ -22,7 +22,9 @@ function generatePokemonCard(pokemon_name) {
 const pokemon_list = document.querySelector("#pokemon-list");
 let pokemon_number = 1;
 
-fetch(`https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=151`)
+fetch(
+  `https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=151`
+)
   .then((result) => {
     return result.json();
   })
@@ -30,7 +32,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=151`
     for (const n of api_return.results) {
       generatePokemonCard(n.name);
     }
-    return api_return
+    return api_return;
   })
   .then(() => {
     for (const n of pokemon_list.children) {
@@ -40,14 +42,14 @@ fetch(`https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=151`
         })
         .then((pokemon_data) => {
           fetch(`${pokemon_data.species.url}`)
-          .then(result => {
-            return result.json();
-          })
-          .then(pokemon_data_specie => {
-            let poke_description = n.getElementsByClassName("description")[0];
-          poke_description.innerHTML =
-            pokemon_data_specie.flavor_text_entries[9].flavor_text;
-          });
+            .then((result) => {
+              return result.json();
+            })
+            .then((pokemon_data_specie) => {
+              let poke_description = n.getElementsByClassName("description")[0];
+              poke_description.innerHTML =
+                pokemon_data_specie.flavor_text_entries[9].flavor_text;
+            });
           for (const pokemon_type of pokemon_data.types) {
             let new_poke_type = document.createElement("li");
             const pokemon_types_list = n.getElementsByClassName("types");
