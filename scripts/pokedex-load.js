@@ -23,7 +23,7 @@ const pokemon_list = document.querySelector("#pokemon-list");
 let pokemon_number = 1;
 
 fetch(
-  `https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=386`
+  `https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=386`, { cache: "force-cache" }
 )
   .then((result) => {
     return result.json();
@@ -36,12 +36,12 @@ fetch(
   })
   .then(() => {
     for (const n of pokemon_list.children) {
-      fetch(`https://pokeapi.co/api/v2/pokemon/${n.id}`)
+      fetch(`https://pokeapi.co/api/v2/pokemon/${n.id}`, { cache: "force-cache" })
         .then((result) => {
           return result.json();
         })
         .then((pokemon_data) => {
-          fetch(`${pokemon_data.species.url}`)
+          fetch(`${pokemon_data.species.url}`, { cache: "force-cache" })
             .then((result) => {
               return result.json();
             })
