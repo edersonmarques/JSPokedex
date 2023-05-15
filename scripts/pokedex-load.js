@@ -23,7 +23,7 @@ const pokemon_list = document.querySelector("#pokemon-list");
 let pokemon_number = 1;
 
 fetch(
-  `https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=151`
+  `https://pokeapi.co/api/v2/pokemon?offset=${pokemon_number - 1}&limit=386`
 )
   .then((result) => {
     return result.json();
