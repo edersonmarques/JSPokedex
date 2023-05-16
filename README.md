@@ -1,6 +1,6 @@
 # PokéJS
 
-Este projeto é uma Pokedéx feita com HTML, CSS e JavaScript. Ele contém todos os 151 Pokémons da primeira geração e foi criado utilizando a PokeAPI.
+Este projeto é uma Pokedéx feita com HTML, CSS e JavaScript. Ele contém todos os Pokémons até a terceira geração e foi criado utilizando a PokeAPI.
 
 # Funcionalidades
 - Dark mode: O usuário pode alternar entre o tema claro e o escuro
